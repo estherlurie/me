@@ -1,26 +1,41 @@
 <script lang="ts">
   import svelteLogo from './assets/svelte.svg'
-  import viteLogo from '/vite.svg'
+  import heart from '/heart.svg'
   import Counter from './lib/Counter.svelte'
 </script>
 
 <main>
-  <h1 class="name">esti</h1>
-  <a href="github.com/estherlurie" class="link">developer</a>
-  <br>
-  <a href="instagram.com/bedrumorsband" class="link">bass player</a>
-  <br>
-  <a class="link">language learner</a>
-  <br>
-  <a href="twitter.com/rustologist" class="link">tweeter</a>
+  <div class="header">
+    <h1 class="name">esti</h1>
+    <img class="logo" src={heart}/>
+  </div>
+  <div class="links">
+    <a class="link" href="github.com/estherlurie">developer</a>
+    <a class="link" href="instagram.com/bedrumorsband">bass player</a>
+    <a class="link">language learner</a>
+    <a class="link" href="twitter.com/rustologist">tweeter</a>
+  </div>
 </main>
 
 <style>
+    .header {
+        display: flex;
+    }
+
     .name {
         color: #ff6060;
     }
 
-    .link {
+    .links {
         font-size: 1.25em;
+    }
+
+    .link {
+        display: block;
+    }
+
+    .logo {
+        width: 50px;
+        margin-left: 10px;
     }
 </style>
