@@ -23,7 +23,7 @@
     }
 
     .name {
-        color: #ff6060;
+        color: #db3030;
     }
 
     .links {
@@ -37,5 +37,10 @@
     .logo {
         width: 50px;
         margin-left: 10px;
+    }
+    @media (prefers-color-theme: light) {
+        .name {
+            color: #ff6060;
+        }
     }
 </style>
