@@ -10,10 +10,10 @@
     <img class="logo" src={heart}/>
   </div>
   <div class="links">
-    <a class="link" href="github.com/estherlurie">developer</a>
-    <a class="link" href="instagram.com/bedrumorsband">bass player</a>
+    <a class="link" href="https://www.github.com/estherlurie">developer</a>
+    <a class="link" href="https://www.instagram.com/bedrumorsband">bass player</a>
     <a class="link">language learner</a>
-    <a class="link" href="twitter.com/rustologist">tweeter</a>
+    <a class="link" href="https://www.twitter.com/rustologist">tweeter</a>
   </div>
 </main>
 
