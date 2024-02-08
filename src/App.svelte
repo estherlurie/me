@@ -1,46 +1,48 @@
 <script lang="ts">
-  import svelteLogo from './assets/svelte.svg'
-  import heart from '/heart.svg'
-  import Counter from './lib/Counter.svelte'
+  import heart from "/heart.svg";
+  import NewTabLink from "./lib/NewTabLink.svelte";
 </script>
 
 <main>
   <div class="header">
     <h1 class="name">esti</h1>
-    <img class="logo" src={heart}/>
+    <img class="logo" alt="I <3 you!" src={heart} />
   </div>
   <div class="links">
-    <a class="link" href="https://www.github.com/estherlurie">developer</a>
-    <a class="link" href="https://www.instagram.com/bedrumorsband">bass player</a>
-    <a class="link">language learner</a>
-    <a class="link" href="https://www.twitter.com/rustologist">tweeter</a>
+    <NewTabLink url={"https://www.github.com/estherlurie"} text={"developer"} />
+    <NewTabLink
+      url={"https://www.instagram.com/bedrumorsband"}
+      text={"bass player"}
+    />
+    <NewTabLink
+      url={"https://youtu.be/EM8my7_ApbA?si=sFcY1HKag6tlya-k"}
+      text={"language learner"}
+    />
+    <NewTabLink url={"https://www.twitter.com/rustologist"} text={"tweeter"} />
   </div>
 </main>
 
 <style>
-    .header {
-        display: flex;
-    }
+  .header {
+    display: flex;
+  }
 
+  .name {
+    color: #db3030;
+  }
+
+  .links {
+    font-size: 1.25em;
+  }
+
+  .logo {
+    width: 50px;
+    margin-left: 10px;
+  }
+
+  @media (prefers-color-theme: light) {
     .name {
-        color: #db3030;
+      color: #ff6060;
     }
-
-    .links {
-        font-size: 1.25em;
-    }
-
-    .link {
-        display: block;
-    }
-
-    .logo {
-        width: 50px;
-        margin-left: 10px;
-    }
-    @media (prefers-color-theme: light) {
-        .name {
-            color: #ff6060;
-        }
-    }
+  }
 </style>
