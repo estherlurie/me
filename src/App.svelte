@@ -37,7 +37,7 @@
     font-size: 1.25em;
   }
 
-  @media (prefers-color-theme: light) {
+  @media (prefers-color-scheme: light) {
     .name {
       color: #ff6060;
     }
