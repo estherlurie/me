@@ -29,7 +29,7 @@
   }
 
   .name {
-    color: #db3030;
+    color: #fd7080;
     margin: 0;
   }
 
